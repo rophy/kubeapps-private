@@ -4,7 +4,13 @@ chartmuseum:
   env:
     open:
       DISABLE_API: false
+      AUTH_ANONYMOUS_GET: true
     existingSecret: chartmuseum-secret
     existingSecretMappings:
       BASIC_AUTH_USER: basic-auth-user
       BASIC_AUTH_PASS: basic-auth-pass
+kubeapps:
+  apprepository:
+    initialRepos:
+    - name: chartmuseum
+      url: https://kubeapps-chartmuseum:8080
