@@ -13,4 +13,4 @@ kubeapps:
   apprepository:
     initialRepos:
     - name: chartmuseum
-      url: https://kubeapps-chartmuseum:8080
+      url: http://kubeapps-chartmuseum:8080
