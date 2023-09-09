@@ -5,10 +5,9 @@ chartmuseum:
     open:
       DISABLE_API: false
       AUTH_ANONYMOUS_GET: true
-    existingSecret: chartmuseum-secret
-    existingSecretMappings:
-      BASIC_AUTH_USER: basic-auth-user
-      BASIC_AUTH_PASS: basic-auth-pass
+  secret:
+    BASIC_AUTH_USER: curator
+    BASIC_AUTH_PASS: mypassword
 kubeapps:
   apprepository:
     initialRepos:
